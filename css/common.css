@@ -1,0 +1,88 @@
+/* blind */
+.blind{
+  width: 1px;height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  }
+
+/* inner */
+.inner{
+  width: 1152px;
+  margin: 0 auto;
+}
+
+/* 타이틀(h2) */
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 로고 공용이미지 */
+.search_area .main_logo .ico_main_logo{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/logo_new_2019.png?ver=2019);
+  background-repeat: no-repeat;
+}
+
+/* 공용이미지 */
+.service_area .top_logo .ico_top_logo,
+.search_area .search_box .ico_search,
+.main_banner .main_controls .slide_btns .s_prev,
+.main_banner .main_controls .slide_btns .s_play,
+.main_banner .main_controls .slide_btns .s_next,
+.sc_04 .cont_head .more_btn,
+.sc_06 .news_head .all_btn,
+.sc_09 .popup_controls .slide_btns .s_prev,
+.sc_09 .popup_controls .slide_btns .s_play,
+.sc_09 .popup_controls .slide_btns .s_next,
+.add_area .inquiry_area .ico_f_logo{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png);
+  background-repeat: no-repeat;
+}
+
+/* 공용이미지2 */
+.main_slide_area .main_slide .main_btn .ico_main_issue,
+.main_slide_area .main_slide .main_btn .ico_main_part{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png);
+  background-repeat: no-repeat;
+}
+
+/* sc02 icon */
+.sc_02 .service_list .item .i_i01,
+.sc_02 .service_list .item .i_i02,
+.sc_02 .service_list .item .i_i03,
+.sc_02 .service_list .item .i_i04,
+.sc_02 .service_list .item .i_i05,
+.sc_02 .service_list .item .i_i06,
+.sc_02 .service_list .item .i_i07,
+.sc_02 .service_list .item .i_i08,
+.sc_02 .service_list .item .i_i09,
+.sc_02 .service_list .item .i_i10,
+.sc_02 .service_list .item .i_i11{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_service_2021.png?ver=210526);
+  background-repeat: no-repeat;
+}
+
+/* sns icon */
+.sns_area .link_wrap .title::after,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_insta,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_facebook,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_twitter,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_blog,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_youtobe,
+.sns_area .link_wrap .sns_box .sns_list .item .ico_kakaostory{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/ico_sns_list_2021.png?ver=20210113);
+  background-repeat: no-repeat;
+}
+
+/* footer sns icon */
+.corp_area .f_sns .i_link .ico_facebook,
+.corp_area .f_sns .i_link .ico_twitter,
+.corp_area .f_sns .i_link .ico_insta,
+.corp_area .f_sns .i_link .ico_kakaostory,
+.corp_area .f_sns .i_link .ico_youtobe,
+.corp_area .f_sns .i_link .ico_blog{
+  background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_sns.png);
+  background-repeat: no-repeat;
+}
