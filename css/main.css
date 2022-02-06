@@ -142,18 +142,6 @@
   font-size: 13px;
   padding-right: 65px;
 }
-/* .main_banner .main_controls .page .index_count{
-  color: #fff;
-  letter-spacing: 0;
-  font-size: 13px;
-  margin-right: -3px;
-}
-.main_banner .main_controls .page .total_count{
-  color: #fff;
-  letter-spacing: 0;
-  font-size: 13px;
-  margin-left: -3px;
-} */
 
 .main_banner .main_controls .slide_btns{
   position: absolute;
@@ -173,6 +161,9 @@
 }
 .main_banner .main_controls .slide_btns .s_play{
   background-position: -285px -285px;
+}
+.main_banner .main_controls .slide_btns .s_play.pause{
+  background-position: -269px -285px;
 }
 .main_banner .main_controls .slide_btns .s_next{
   margin-left: -7px;
@@ -683,11 +674,13 @@
   height: 3em;
   line-height: 1.5em;
   margin-bottom: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
   word-wrap: normal;
   color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .sc_06 .n_item:hover .img_wrap img{
@@ -881,18 +874,18 @@
   padding-top: 50px;
 }
 .sc_09 .popup_slide_bnr{}
-.sc_09 .popup_slide_bnr .slide_wrap::after{
+/* .sc_09 .popup_slide_bnr .slide_wrap::after{
   content: '';
   display: block;
   clear: both;
-}
+} */
 .sc_09 .popup_slide_bnr .slide_wrap .swiper{
-  float: left;
+  /* float: left; */
   width: 355px;
 }
-.sc_09 .popup_slide_bnr .slide_wrap .swiper+.swiper{
+/* .sc_09 .popup_slide_bnr .slide_wrap .swiper+.swiper{
   margin-left: 43px;
-}
+} */
 
 .sc_09 .popup_controls{
   position: relative;
@@ -901,20 +894,18 @@
     margin-top: 5px;
     overflow: hidden;
 }
-.sc_09 .popup_controls .page{
+.sc_09 .popup_controls .swiper-pagination{
   position: absolute;
-  right: 70px;
+  left: auto;
+  right: 71px;
   top: 2px;
+  width: 100px;
+  height: 100%;
+  text-align: right;
 }
-.sc_09 .popup_controls .page .index_count{
+.sc_09 .popup_controls .swiper-pagination span{
   font-size: 14px;
-  margin-right: -3px;
 }
-.sc_09 .popup_controls .page .total_count{
-  font-size: 14px;
-  margin-left: -3px;
-}
-
 .sc_09 .popup_controls .slide_btns{
   float: right;
   overflow: hidden;
@@ -933,6 +924,9 @@
 .sc_09 .popup_controls .slide_btns .s_play{
   background-position: -65px -43px;
   margin-left: -1px;
+}
+.sc_09 .popup_controls .slide_btns .s_play.pause{
+  background-position: -101px -43px;
 }
 .sc_09 .popup_controls .slide_btns .s_next{
   background-position: -86px -43px;

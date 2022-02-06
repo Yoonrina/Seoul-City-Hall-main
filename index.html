@@ -7,15 +7,11 @@
   <title>서울시청 메인페이지 숙제</title>
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/swiper.min.css"/>
   <!-- css -->
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- swiper demo css -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <!-- swiper demo js -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   
@@ -63,7 +59,9 @@
               ">검색창영역</legend>
               <div class="search_box">
                 <input type="text" class="text" placeholder="검색어를 입력해 주세요">
-                <i class="ico_kibord"></i>
+                <a href="" class="ico_kibord">
+                  <span class="blind">가상키보드</span>
+                </a>
                 <button type="submit" class="ico_search">
                   <span class="blind">검색하기</span>
                 </button>
@@ -130,43 +128,37 @@
               </a>
             </h3>
 
-            <div id="issue_cont" class="main_banner issue_bnr on">
+            <div id="issue_cont" class="swiper-container main_banner issue_bnr on">
               <div class="swiper-wrapper">
                 <!-- 배너1 -->
-                <div class="swiper-slide bnr_wrap"><a href="">
-                  <figure>
-                    <img src="https://www.seoul.go.kr/upload/hotissue/5a2be6476f004e9c8145ed31e7b5054b.jpg" alt="서울시, 올빼미버스 3개 노선 한시적 신설 연말 심야 교통대책
-                    늦은 밤 집에 갈 땐? 올빼미버스!
-                    2021.12.01~2022.01.01. 주 5일(화~토)">
-                    <figcaption>
-                      서울시, 올빼미버스 3개 노선 한시적 신설 연말 심야 교통대책
-                    </figcaption>
-                  </figure>
-                </a></div>
+                <div class="swiper-slide bnr_wrap">
+                  <a href="">
+                    <figure>
+                      <img src="https://www.seoul.go.kr/upload/hotissue/5a2be6476f004e9c8145ed31e7b5054b.jpg" alt="서울시, 올빼미버스 3개 노선 한시적 신설 연말 심야 교통대책
+                      늦은 밤 집에 갈 땐? 올빼미버스!
+                      2021.12.01~2022.01.01. 주 5일(화~토)">
+                      <figcaption>
+                        서울시, 올빼미버스 3개 노선 한시적 신설 연말 심야 교통대책
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
 
                 <!-- 배너2 -->
-                <div class="swiper-slide bnr_wrap"><a href="">
-                  <figure>
-                    <img src="https://www.seoul.go.kr/upload/hotissue/faf2fcf8f71b45f684e499d8dd50982c.jpg" alt="재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책">
-                    <figcaption>
-                      재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
-                    </figcaption>
-                  </figure>
-                </a></div>
+                <div class="swiper-slide bnr_wrap">
+                  <a href="">
+                    <figure>
+                      <img src="https://www.seoul.go.kr/upload/hotissue/faf2fcf8f71b45f684e499d8dd50982c.jpg" alt="재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책">
+                      <figcaption>
+                        재택치료자 외래진료센터, 응급센터 운영...코로나19 긴급 대책
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
               </div>
 
               <div class="main_controls">
-                <div class="page swiper-pagination">
-                  <!-- <span class="index_count">
-                    <span class="blind">현재페이지수</span>
-                    1
-                  </span>
-                  /
-                  <span class="total_count">
-                    <span class="blind">전체페이지수</span>
-                    2
-                  </span> -->
-                </div>
+                <div class="page swiper-pagination"></div>
                 <div class="slide_btns">
                   <a href="" class="s_btn s_prev">
                     <span class="blind">이전</span>
@@ -191,7 +183,7 @@
               </a>
             </h3>
 
-            <div id="part_cont" class="main_banner part_bnr">
+            <div id="part_cont" class="swiper-container main_banner part_bnr">
               <div class="swiper-wrapper">
                 <!-- 배너1 -->
                 <div class="swiper-slide bnr_wrap"><a href="">
@@ -225,17 +217,7 @@
               </div>
 
               <div class="main_controls">
-                <div class="page swiper-pagination">
-                  <!-- <span class="index_count">
-                    <span class="blind">현재페이지수</span>
-                    1
-                  </span>
-                  /
-                  <span class="total_count">
-                    <span class="blind">전체페이지수</span>
-                    2
-                  </span> -->
-                </div>
+                <div class="page swiper-pagination"></div>
                 <div class="slide_btns">
                   <a href="" class="s_btn s_prev">
                     <span class="blind">이전</span>
@@ -594,7 +576,7 @@
                 <img src="https://news.seoul.go.kr/welfare/files/2021/12/welfare_news1209_1.jpg" alt="서울시 코로나19 검사소">
               </div>
               <p>
-                '서울시 코로나19 검사소’ 권역별 4개소 운영(평일·주말 13~21시)
+                '서울시 코로나19 검사소’ 권역별 4개소 운영(평일·주말 13~21시)'서울시 코로나19 검사소’ 권역별 4개소 운영(평일·주말 13~21시)
               </p>
             </a>
           </li>
@@ -796,32 +778,44 @@
       <h2 class="blind">팝업게시물 바로보기</h2>
       <div class="inner">
 
-        <div class="popup_slide_bnr">
-          <div class="slide_wrap">
-            <div class="swiper"><a href="">
-              <img src="https://www.seoul.go.kr/upload/popupZone/b8e5751601de42c0bf280267ed0dc369.jpg" alt="슬라이드배너">
-            </a></div>
-            <div class="swiper"><a href="">
-              <img src="https://www.seoul.go.kr/upload/popupZone/9587f25b10ff4de1a9d3bd3ffd12e433.jpg" alt="슬라이드배너">
-            </a></div>
-            <div class="swiper"><a href="">
-              <img src="https://www.seoul.go.kr/upload/popupZone/3188eefeabdb443cbd7ea6950dfac11e.jpg" alt="슬라이드배너">
-            </a></div>
+        <div class="swiper-container popup_slide_bnr">
+          <div class="swiper-wrapper slide_wrap">
+            <div class="swiper-slide swiper">
+              <a href="">
+                <img src="https://www.seoul.go.kr/upload/popupZone/b8e5751601de42c0bf280267ed0dc369.jpg" alt="슬라이드배너">
+              </a>
+            </div>
+            <div class="swiper-slide swiper">
+              <a href="">
+               <img src="https://www.seoul.go.kr/upload/popupZone/9587f25b10ff4de1a9d3bd3ffd12e433.jpg" alt="슬라이드배너">
+              </a>
+            </div>
+            <div class="swiper-slide swiper">
+              <a href="">
+                <img src="https://www.seoul.go.kr/upload/popupZone/3188eefeabdb443cbd7ea6950dfac11e.jpg" alt="슬라이드배너">
+              </a>
+            </div>
+            <div class="swiper-slide swiper">
+              <a href="">
+                <img src="https://www.seoul.go.kr/upload/popupZone/b8e5751601de42c0bf280267ed0dc369.jpg" alt="슬라이드배너">
+              </a>
+            </div>
+            <div class="swiper-slide swiper">
+              <a href="">
+               <img src="https://www.seoul.go.kr/upload/popupZone/9587f25b10ff4de1a9d3bd3ffd12e433.jpg" alt="슬라이드배너">
+              </a>
+            </div>
+            <div class="swiper-slide swiper">
+              <a href="">
+                <img src="https://www.seoul.go.kr/upload/popupZone/3188eefeabdb443cbd7ea6950dfac11e.jpg" alt="슬라이드배너">
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="popup_controls">
-          <div class="page">
-            <span class="index_count">
-              <span class="blind">현재페이지수</span>
-              1
-            </span>
-            /
-            <span class="total_count">
-              <span class="blind">전체페이지수</span>
-              20
-            </span>
-          </div>
+          <div class="swiper-pagination"></div>
+
           <div class="slide_btns">
             <a href="" class="s_btn s_prev">
               <span class="blind">이전</span>
@@ -1044,87 +1038,11 @@
     </div>
   </footer>
 
-
-
-  <script>
-    $(function(){
-
-
-      alert('TEST');
-
-
-      //맨위로버튼
-      $('.fixed_icon').click(function(){
-        target = $('.main_top').offset().top;
-      })
-      //맨위로버튼이 스크롤 내리면 나타남
-      $(window).scroll(function(){
-
-        curr = $(this).scrollTop();
-
-        if(curr > 100){
-          $('.fixed_icon').addClass('show');
-        }else{
-          $('.fixed_icon').removeClass('show');
-        }
-
-      })
-
-      //sc_01 슬라이드 만들기
-      var swiper = new Swiper(".main_banner", {
-      loop:true,
-      speed:900,
-
-      navigation: {
-        nextEl: ".s_next",
-        prevEl: ".s_prev",
-      },
-
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction"
-      },
-    });
-
-    //sc_01 탭메뉴 만들기
-    $('.main_btn').click(function(e){
-      e.preventDefault();
-
-      target = $(this).children('.main_btn_link').attr('href');
-
-      $('.main_btn').removeClass('on');
-      $(this).addClass('on');
-
-      $('.main_banner').removeClass('on');
-      $(target).addClass('on');
-    })
-
-
-      //sc_10 서브메뉴
-      $('.link_menu a').click(function(e){
-        e.preventDefault();
-        
-        h = $(this).siblings('.sub_box').children('.sub').outerHeight();
-
-        // $(this).addClass('up');
-
-        /*
-        $('.sub').animate({height:0},200);
-        $(this).siblings('.sub_box').animate({height:h},200);
-        */
-
-        if($(this).siblings('.sub_box').height() > 0){
-          $('.link_menu a').removeClass('up');
-          $('.sub_box').animate({height:0},200);
-        }else{
-          $('.sub_box').animate({height:0},200);
-          $(this).siblings('.sub_box').animate({height:h},200);
-          $('.link_menu a').removeClass('up');
-          $(this).addClass('up');
-        }
-
-      })
-    })
-  </script>
+<!-- js -->
+<script src="js/jquery.js"></script>
+<!-- swiper js -->
+<script src="js/swiper.min.js"></script>
+<!-- main js -->
+<script src="js/main.js"></script>
 </body>
 </html>
