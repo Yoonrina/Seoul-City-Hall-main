@@ -62,7 +62,7 @@ $('.main_btn').click(function(e){
     var newsSlider01 = new Swiper('.issue_bnr', {
       loop: true,
       autoplay: {
-        delay: 500,
+        delay: 2500,
         disableOnInteraction: false,
       },
       navigation: {
@@ -93,7 +93,7 @@ $('.main_btn').click(function(e){
 var newsSlider02 = new Swiper('.part_bnr', {
   loop: true,
   autoplay: {
-    delay: 500,
+    delay: 2500,
     disableOnInteraction: false,
   },
   navigation: {
