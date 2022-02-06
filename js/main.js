@@ -89,7 +89,7 @@ $('.main_btn').click(function(e){
   });
 
 
-//sc_01 issue_bnr
+//sc_01 part_bnr
 var newsSlider02 = new Swiper('.part_bnr', {
   loop: true,
   autoplay: {
@@ -107,7 +107,7 @@ var newsSlider02 = new Swiper('.part_bnr', {
 });
 newsSlider02.autoplay.stop();
 
-//sc_01 issue_bnr 정지, 재생
+//sc_01 part_bnr 정지, 재생
 $('.part_bnr .s_play').click(function(e){
 e.preventDefault();
 
@@ -140,7 +140,7 @@ if($(this).hasClass('pause')){
     },
   });
   
-  //sc_01 정지, 재생
+  //sc_09 정지, 재생
   $('.popup_controls .s_play').click(function(e){
     e.preventDefault();
 
