@@ -14,7 +14,15 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  <!-- skip_nav -->
+  <div id="skip_nav">
+    <ul>
+      <li><a class="btn_skip" href="#search">검색하기</a></li>
+      <li><a class="btn_skip" href="#gnb">주 메뉴 바로가기</a></li>
+      <li><a class="btn_skip" href="#main">본문 바로가기</a></li>
+    </ul>
+  </div>
+
   <header>
     <div class="inner main_top">
       <div class="service_area">
@@ -25,7 +33,7 @@
           </a></h1>
         </div>
 
-        <nav class="gnb">
+        <nav id="gnb" class="gnb">
           <ul class="gnb_list">
             <li class="gnb_menu"><a href="">서울소식</a></li>
             <li class="gnb_menu"><a href="">시민참여</a></li>
@@ -58,7 +66,7 @@
               <legend class="blind
               ">검색창영역</legend>
               <div class="search_box">
-                <input type="text" class="text" placeholder="검색어를 입력해 주세요">
+                <input type="text" class="text" placeholder="검색어를 입력해 주세요" id="search">
                 <a href="" class="ico_kibord">
                   <span class="blind">가상키보드</span>
                 </a>
@@ -113,7 +121,7 @@
     </a>
   </div>
   
-  <main>
+  <main id="main">
     <div class="sc_01">
       <div class="inner">
         <div class="main_slide_area">
