@@ -163,13 +163,32 @@ if($(this).hasClass('pause')){
 
     if($(this).siblings('.sub_box').height() > 0){
       $('.link_menu a').removeClass('up');
-      $('.sub_box').animate({height:0},200);
+      $('.sub_box').stop().animate({height:0},200);
     }else{
-      $('.sub_box').animate({height:0},200);
-      $(this).siblings('.sub_box').animate({height:h},200);
+      $('.sub_box').stop().animate({height:0},200);
+      $(this).siblings('.sub_box').stop().animate({height:h},200);
       $('.link_menu a').removeClass('up');
       $(this).addClass('up');
     }
+
+
+
+    $('.sub li:last-child a').keydown(function(e){
+      var v_keyCode = event.keyCode || event.which;
+      if(v_keyCode == 9){
+          if(!event.shiftKey){
+            $('.sub_box').stop().animate({height:0},200);
+          }
+      }
+    })
+    $('.sub li:first-child a').keydown(function(e){
+      var v_keyCode = event.keyCode || event.which;
+      if(v_keyCode == 9){
+          if(event.shiftKey){
+            $(this).siblings('.sub_box').stop().animate({height:h},200);
+          }
+      }
+  })
 
   })
 })
